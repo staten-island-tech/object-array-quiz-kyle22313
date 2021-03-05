@@ -10,14 +10,36 @@ const presidents = [
   { name: "Richard Nixon", terms: 2, party: "R" },
   { name: "John F. Kennedy", terms: 1, party: "D" },
   { name: "Lyndon Johnson", terms: 2, party: "D" },
-  { name: "Dwight Eisenhower", terms: 2, party: "R" }
+  { name: "Dwight Eisenhower", terms: 2, party: "R" },
 ];
 
 //Challenge Questions
 //1) Filter all presidents, leaving only the Democratic ones
-
+//const Democratic = presidents.filter(function (demos) {
+//  if ((demos.party = "D" && demos.party < "R")) {
+//    return 1;
+//  } else {
+//    return false;
+//  }
+//});
+//console.table(Democratic);
 //2)Filter all presidents to leave only one term Republican presidents HINT use If statement
-
+const republicans = presidents.filter(function (repubs) {
+  if ((repubs.party = "R" && repubs.party > "D")) {
+    return true;
+  } else {
+    return false;
+  }
+});
+console.table(republicans);
+const republiones = republicans.filter(function (reponess) {
+  if ((repsones.terms = "1" && reps.terms < "2")) {
+    return true;
+  } else {
+    return false;
+  }
+});
+console.table(republiones);
 //3) return only the last three presidents
 
 //4) log all dems who served 2 terms. HINT use chain filter, filter and slice
